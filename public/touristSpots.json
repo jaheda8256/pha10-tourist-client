@@ -1,0 +1,93 @@
+[
+  {
+    "_id": "1",
+    "image": "https://example.com/sundarban.jpg",
+    "tourists_spot_name": "Sundarban",
+    "country_Name": "Bangladesh",
+    "location": "Khulna Division",
+    "short_description": "The Sundarbans is a vast mangrove forest stretching across Bangladesh and West Bengal, India. It's known for its wide range of wildlife, including the Bengal tiger, spotted deer, crocodiles, and various bird species.",
+    "average_cost": "Varies",
+    "seasonality": "All year",
+    "travel_time": "3-4 days",
+    "totalVisitorsPerYear": "100,000",
+    "user_email": "user@example.com",
+    "user_name": "John Doe"
+  },
+  
+  
+  {
+    "_id": "2",
+    "image": "https://example.com/bangkok.jpg",
+    "tourists_spot_name": "Bangkok",
+    "country_Name": "Thailand",
+    "location": "Bangkok",
+    "short_description": "Bangkok, Thailand’s capital, is a large city known for ornate shrines and vibrant street life. The Grand Palace complex, with its sacred Wat Phra Kaew Temple, is a must-visit.",
+    "average_cost": "Moderate",
+    "seasonality": "All year",
+    "travel_time": "3-5 days",
+    "totalVisitorsPerYear": "Over 20 million",
+    "user_email": "user@example.com",
+    "user_name": "Jane Smith"
+  },
+  
+  {
+    "_id": "3",
+    "image": "https://example.com/bali.jpg",
+    "tourists_spot_name": "Bali",
+    "country_Name": "Indonesia",
+    "location": "Bali Island",
+    "short_description": "Bali is an Indonesian island known for its forested volcanic mountains, iconic rice paddies, beaches, and coral reefs. It's a popular destination for yoga and meditation retreats.",
+    "average_cost": "Varies",
+    "seasonality": "All year",
+    "travel_time": "5-7 days",
+    "totalVisitorsPerYear": "Over 5 million",
+    "user_email": "user@example.com",
+    "user_name": "Alice Johnson"
+  },
+  
+  {
+    "_id": "4",
+    "image": "https://example.com/kuala_lumpur.jpg",
+    "tourists_spot_name": "Kuala Lumpur",
+    "country_Name": "Malaysia",
+    "location": "Kuala Lumpur",
+    "short_description": "Kuala Lumpur is the capital city of Malaysia, known for its modern skyline dominated by the iconic Petronas Twin Towers. It's a cultural melting pot with Malay, Chinese, and Indian influences.",
+    "average_cost": "Moderate",
+    "seasonality": "All year",
+    "travel_time": "2-3 days",
+    "totalVisitorsPerYear": "Over 10 million",
+    "user_email": "user@example.com",
+    "user_name": "David Brown"
+  },
+  
+  {
+    "_id": "5",
+    "image": "https://example.com/ha_long_bay.jpg",
+    "tourists_spot_name": "Ha Long Bay",
+    "country_Name": "Vietnam",
+    "location": "Quang Ninh Province",
+    "short_description": "Ha Long Bay is a UNESCO World Heritage Site known for its emerald waters and thousands of towering limestone islands topped with rainforests. It's a popular destination for cruises and kayaking.",
+    "average_cost": "Varies",
+    "seasonality": "All year",
+    "travel_time": "2-3 days",
+    "totalVisitorsPerYear": "Over 5 million",
+    "user_email": "user@example.com",
+    "user_name": "Emily Wilson"
+  },
+  
+  {
+    "_id": "6",
+    "image": "https://example.com/angkor_wat.jpg",
+    "tourists_spot_name": "Angkor Wat",
+    "country_Name": "Cambodia",
+    "location": "Siem Reap Province",
+    "short_description": "Angkor Wat is a temple complex in Cambodia and the largest religious monument in the world. It was originally built as a Hindu temple for the Khmer Empire but gradually transformed into a Buddhist temple.",
+    "average_cost": "Moderate",
+    "seasonality": "All year",
+    "travel_time": "2-3 days",
+    "totalVisitorsPerYear": "Over 2 million",
+    "user_email": "user@example.com",
+    "user_name": "Michael Lee"
+  }
+  ]
+
