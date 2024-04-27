@@ -7,6 +7,7 @@ import { toast } from "react-toastify";
 
 import useAuth from "../../hooks/useAuth";
 import Navbar from "../../Shared/Navbar/Navbar";
+import { updateProfile } from "firebase/auth";
 
 
 const Register = () => {
@@ -25,11 +26,13 @@ const Register = () => {
   } = useForm();
 
 
+
+
   const onSubmit = (data) => {
     const { fullName, email, password, photoURL} = data;
 
 
-    createUser(email, password)
+    createUser(email, password, fullName, photoURL)
       .then((result) => {
 
         if(result.user){
@@ -37,22 +40,24 @@ const Register = () => {
           navigate(from);
         }
         console.log(result);
-       
-        // const profileUpdates = {
-        //   displayName: fullName,
-        //   photoURL: photoURL
-        // };
-        // updateProfile(result.user, profileUpdates)
-        // .then(() => {
-        //   console.log("Profile updated successfully");
-        //   setUser({...user, 
-        //     displayName: fullName,
-        //     photoURL: photoURL
-        //   })
-        // })
-        // .catch((error) => {
-        //   console.error("Error updating profile:", error);
-        // });
+    
+
+        const profileUpdates = {
+            displayName: fullName,
+            photoURL: photoURL
+          };
+          updateProfile(result.user, profileUpdates)
+          .then(() => {
+            console.log("Profile updated successfully");
+            setUser({...user, 
+              displayName: fullName,
+              photoURL: photoURL
+            })
+          })
+          .catch((error) => {
+            console.error("Error updating profile:", error);
+          });
+        
       
     })
 

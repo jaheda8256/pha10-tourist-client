@@ -83,8 +83,10 @@ const Navbar = () => {
           <ul className="menu menu-horizontal   px-1 gap-4">{navLinks}</ul>
         </div>
 
-        {user && (
-          <div className="navbar-end gap-4">
+     {
+        
+         user ? (
+            <div className="navbar-end gap-4">
             <div className="dropdown dropdown-end ">
               <label
                 tabIndex={0}
@@ -115,8 +117,8 @@ const Navbar = () => {
 
             </div>
           </div>
-        )}
-
+        )
+        :
         <div className=" gap-4">
           <Link to="/login">
                 <button
@@ -126,6 +128,10 @@ const Navbar = () => {
                </button>
           </Link>
         </div>
+        
+        }
+
+        
       </div>
     </div>
   );

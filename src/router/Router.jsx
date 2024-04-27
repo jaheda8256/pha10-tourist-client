@@ -21,7 +21,7 @@ const router = createBrowserRouter([
         {
             path: '/',
             element: <Home></Home>,
-            // loader: () => fetch('/FakeData.json')
+            loader: () => fetch('http://localhost:5000/tourists')
         }, 
         {
           path: '/login',
