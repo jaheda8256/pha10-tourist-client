@@ -10,6 +10,7 @@ import About from "../components/About/About";
 import PrivateRoute from "../components/PrivateRoute/PrivateRoute";
 import ErrorPage from "../components/ErrorPage/ErrorPage";
 import AddTouristSpot from "../components/AddTourstSpot";
+import AllTouristsSpot from "../page/AllTouristsSpot/AllTouristsSpot";
 
 
 const router = createBrowserRouter([
@@ -40,6 +41,11 @@ const router = createBrowserRouter([
         {
             path: '/addTourists',
             element: <AddTouristSpot></AddTouristSpot>,
+        },
+        {
+            path: '/allTourists',
+            element: <AllTouristsSpot></AllTouristsSpot>,
+            loader: () => fetch('http://localhost:5000/tourists')
         }
         
       ]

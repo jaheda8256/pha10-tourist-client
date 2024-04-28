@@ -1,7 +1,8 @@
 
-import PropTypes from 'prop-types'; 
 
-const Card = ({tourist}) => {
+const AllCard = ({tourist}) => {
+
+
     const { name,
         country,
         location,
@@ -13,7 +14,6 @@ const Card = ({tourist}) => {
         totalVisitorsPerYear,
         email,
         photo} = tourist;
-
     return (
         <div>
 
@@ -31,7 +31,4 @@ const Card = ({tourist}) => {
     );
 };
 
-Card.propTypes = {
-  name: PropTypes.node
-};
-export default Card;
+export default AllCard;
