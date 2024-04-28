@@ -12,6 +12,7 @@ import ErrorPage from "../components/ErrorPage/ErrorPage";
 import AddTouristSpot from "../components/AddTourstSpot";
 import AllTouristsSpot from "../page/AllTouristsSpot/AllTouristsSpot";
 import Details from "../page/Details/Details";
+import MyList from "../components/MyList/MyList";
 
 
 const router = createBrowserRouter([
@@ -42,9 +43,7 @@ const router = createBrowserRouter([
 
         {
             path: '/details/:id',
-            element: <PrivateRoute>
-                <Details></Details>
-                </PrivateRoute>,
+            element: <Details></Details>,  
             loader: ({params}) => fetch(`http://localhost:5000/tourists/${params.id}`)
         },
         {
@@ -56,6 +55,12 @@ const router = createBrowserRouter([
         {
             path: '/allTourists',
             element: <AllTouristsSpot></AllTouristsSpot>,
+            loader: () => fetch('http://localhost:5000/tourists')
+        },
+
+        {
+            path: '/myList',
+            element: <MyList></MyList>,
             loader: () => fetch('http://localhost:5000/tourists')
         }
         

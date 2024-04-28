@@ -21,7 +21,7 @@ const Home = () => {
      </div>
          <div className="grid md:grid-cols-2 gap-4 mb-16">
          {
-                tourists.map(tourist => <Card
+                tourists.slice(0,6).map(tourist => <Card
                 key={tourist._id}
                 tourist={tourist}
                 >

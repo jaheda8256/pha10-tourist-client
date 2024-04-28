@@ -1,18 +1,16 @@
+import { Link } from "react-router-dom";
 
 
 const AllCard = ({tourist}) => {
 
 
-    const { name,
-        country,
-        location,
-        description,
+    const {
+        _id,
+        name,
         cost,
         seasonality,
         travel,
-        userName,
         totalVisitorsPerYear,
-        email,
         photo} = tourist;
     return (
         <div>
@@ -26,7 +24,9 @@ const AllCard = ({tourist}) => {
 <p>travel_time: {travel}</p>
 <p>seasonality: {seasonality}</p>
 <div className="">
-  <button className="btn bg-[#6fafaf] text-[#134d4d] font-bold">View Details</button>
+<Link to={`/details/${_id}`}>
+           <button className="btn w-full bg-blue-800 text-white">View Details</button>
+  </Link>
 </div>
 </div>
 </div>

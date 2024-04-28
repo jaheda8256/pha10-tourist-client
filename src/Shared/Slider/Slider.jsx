@@ -4,19 +4,19 @@ const Slider = () => {
       <div className="lg:my-20 my-10">
         <div className="carousel w-full">
     <div id="item1" className="carousel-item w-full relative">
-      <img src="https://i.ibb.co/Tv3fk6B/bout.jpg" className="w-full h-[540px] rounded-3xl" />
+      <img src="https://i.ibb.co/1RJLsPJ/hammock-with-beautiful-nature-tropical-beach.jpg" className="w-full h-[540px] rounded-3xl" />
     </div> 
     <div id="item2" className="carousel-item w-full relative">
-      <img src="https://i.ibb.co/C8bmSWQ/hotel-image.jpg" className="w-full h-[540px] rounded-3xl" />
-      <h1 className='absolute text-4xl lg:text-5xl text-center pt-12 text-white  font-pop mt-48 ml-4 lg:ml-80 font-bold '>Enjoy your free time <br />with us.</h1>
+      <img src="https://i.ibb.co/T4ygdPZ/boat-lake-scene-1150-17961.jpg" className="w-full h-[540px] rounded-3xl" />
+  
     </div> 
     <div id="item3" className="carousel-item w-full relative">
-      <img src="https://i.ibb.co/Pr85s7B/bote.jpg" className="w-full h-[540px] rounded-3xl" />
-      <h1 className='absolute text-4xl lg:text-5xl text-center pt-12 text-white  font-pop mt-48 ml-4 lg:ml-80 font-bold '>Enjoy your free time <br />with us.</h1>
+      <img src="https://i.ibb.co/dtgtdkb/chinise-city.jpg" className="w-full h-[540px] rounded-3xl" />
+     
     </div> 
     <div id="item4" className="carousel-item w-full relative">
-      <img src="https://i.ibb.co/8rzkBKX/suimming.jpg" className="w-full h-[540px] rounded-3xl" />
-      <h1 className='absolute text-4xl lg:text-5xl text-center pt-12 text-white  font-pop mt-48 ml-4 lg:ml-80 font-bold '>Enjoy your free time <br />with us.</h1>
+      <img src="https://i.ibb.co/m0jh90N/bagan-scene-myanmar.jpg" className="w-full h-[540px] rounded-3xl" />
+     
     </div>
   </div> 
   <div className="flex justify-center w-full py-2 gap-2">

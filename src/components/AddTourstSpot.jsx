@@ -13,7 +13,6 @@ const AddTouristSpot = () => {
     const form = event.target;
     const photo = form.photo.value;
     const name = form.name.value;
-   
     const email = user.email;
     const country = form.country.value;
     const  location = form.location.value;
