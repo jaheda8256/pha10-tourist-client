@@ -1,8 +1,11 @@
 
 import PropTypes from 'prop-types'; 
+import { Link } from 'react-router-dom';
 
 const Card = ({tourist}) => {
-    const { name,
+    const { 
+        _id,
+        name,
         country,
         location,
         description,
@@ -17,13 +20,16 @@ const Card = ({tourist}) => {
     return (
         <div>
 
-        <div className="card card-side bg-base-100 shadow-xl">
-<figure><img src={photo} alt="Movie"/></figure>
+<div className="card card-side bg-base-100 shadow-xl">
+<figure><img className="rounded-2xl w-[300px]" src={photo} alt="Movie"/></figure>
 <div className="card-body">
-<h2 className="card-title">New movie is released!</h2>
-<p>Click the button to watch on Jetflix app.</p>
-<div className="card-actions justify-end">
-  <button className="btn btn-primary">Watch</button>
+<h2 className="card-title"> {name}</h2>
+<p>average_cost: {cost}</p>
+<p>totalVisitorsPerYear: {totalVisitorsPerYear}</p>
+<p>travel_time: {travel}</p>
+<p>seasonality: {seasonality}</p>
+<div className="">
+  <button className="btn bg-[#6fafaf] text-[#134d4d] font-bold">View Details</button>
 </div>
 </div>
 </div>

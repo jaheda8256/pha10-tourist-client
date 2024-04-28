@@ -1,14 +1,20 @@
 import Navbar from "../Shared/Navbar/Navbar";
 import Swal from 'sweetalert2'
+import useAuth from "../hooks/useAuth";
 
 const AddTouristSpot = () => {
+
+
+  const { user } = useAuth() || {};
+
 
   const handleAddCoffee = (event) => {
     event.preventDefault();
     const form = event.target;
     const photo = form.photo.value;
     const name = form.name.value;
-    const email = form.email.value;
+   
+    const email = user.email;
     const country = form.country.value;
     const  location = form.location.value;
     const description = form.description.value;
@@ -213,6 +219,7 @@ const AddTouristSpot = () => {
               </label>
               <label className="input-group">
                 <input
+                readOnly
                   type="email"
                   name="email"
                   placeholder="User Email"

@@ -4,13 +4,13 @@
 const Footer = () => {
     return (
         <div>
-  <footer className="footer footer-center p-4 bg-purple-500 text-primary-content rounded-2xl">
+  <footer className="footer footer-center p-4 bg-[#c0cece] text-primary-content rounded-2xl">
   <aside>
     {/* <img src={logo} alt="" /> */}
-    <p className="font-bold">
+    <p className="font-bold text-[#134d4d]">
       ACME Industries Ltd. <br/>Providing reliable tech since 1992
     </p> 
-    <p>FIVE Jumeirah Village © 2024 - All right reserved</p>
+    <p className="text-[#134d4d]">FIVE Jumeirah Village © 2024 - All right reserved</p>
   </aside> 
  
 </footer>

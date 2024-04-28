@@ -6,21 +6,22 @@ import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const { logout, user } = useAuth();
-  const [theme, setTheme] = useState('light');
 
-  useEffect(() =>{
-    localStorage.setItem('theme', theme)
-    const localTheme = localStorage.getItem('theme')
-    document.querySelector('html').setAttribute('data-theme', localTheme)
-  },[theme])
 
-  const handleToggle = (e) =>{
-    if(e.target.checked){
-        setTheme('dark')
-    }else{
-        setTheme('light')
-    }
-  }
+const [theme, setTheme] = useState(() => {
+    const storedTheme = localStorage.getItem('theme');
+    return storedTheme ? storedTheme : 'light';
+  });
+
+  useEffect(() => {
+    localStorage.setItem('theme', theme);
+    document.querySelector('html').setAttribute('data-theme', theme);
+  }, [theme]);
+
+  const handleToggle = () => {
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+  };
 
   // console.log(user);
 
@@ -47,7 +48,6 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="max-w-6xl mx-auto p-2">
       <div className="navbar bg-base-200 border-b-2 ">
         <div className="navbar-start">
           <div className="dropdown">
@@ -167,7 +167,7 @@ const Navbar = () => {
           </label>
       </div>
      
-    </div>
+  
   );
 };
 

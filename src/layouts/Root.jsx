@@ -2,6 +2,7 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../Shared/Footer/Footer";
 import useAuth from "../hooks/useAuth";
+
  
 
 const Root = () => {
