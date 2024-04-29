@@ -2,18 +2,29 @@
 import { useLoaderData } from "react-router-dom";
 import Navbar from "../../Shared/Navbar/Navbar";
 import AllCard from "../../Shared/AllCard/AllCard";
+import { useState } from "react";
 
 
 const AllTouristsSpot = () => {
   const loadedTourists = useLoaderData();
-//   const [sortedTourists, setSortedTourists] = useState([]);
+  const [spots, setSpots] = useState(loadedTourists)
 
-//   const handleSortByCost = () => {
-//     const sorted = [...loadedTourists].sort(
-//       (a, b) => b.average_cost - a.average_cost
-//     );
-//     setSortedTourists(sorted);
-//   };
+  const handleSortSpots = e => {
+    const sortBy = e.target.value
+
+    const newSortedSpots = [...spots].sort((spotA, spotB) => {
+      // ascending
+      if (sortBy === 'cost-asc') {
+        return spotA.averageCost - spotB.averageCost
+      }
+      // descending
+      else {
+        return spotB.averageCost - spotA.averageCost
+      }
+    })
+
+    setSpots(newSortedSpots)
+  }
 
   return (
     <div>
@@ -24,19 +35,14 @@ const AllTouristsSpot = () => {
 
 
 {/* sort */}
-      <div className="text-center my-10">
-        <details className="dropdown">
-          <summary className="m-1 btn bg-[#c0cece] text-[#134d4d] font-bold">
-            Sort By: Cost (High to Low)
-          </summary>
-          <ul className="p-2 shadow menu dropdown-content z-[1] bg-[#c0cece] text-[#134d4d] font-bold rounded-box w-52">
-            <li>
-              <a>Sort</a>
-            </li>
-          </ul>
-        </details>
-      </div>
-
+<div className="flex items-center justify-center gap-4 mb-6">
+          <span>Sort by:</span>
+          <select name="sort" onChange={handleSortSpots} className="border min-w-0 px-4 py-2 rounded-md bg-gray-200" defaultValue={''}>
+            <option value='' disabled>Random</option>
+            <option value="cost-asc">average cost (asc)</option>
+            <option value="cost-desc">average cost (desc)</option>
+          </select>
+        </div>
 
       <div className="grid md:grid-cols-2 gap-4 mb-16">
          {

@@ -40,7 +40,9 @@ const Register = () => {
           navigate(from);
         }
         console.log(result);
-    
+
+
+       
 
         const profileUpdates = {
             displayName: fullName,

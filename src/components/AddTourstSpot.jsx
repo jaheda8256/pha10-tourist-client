@@ -73,6 +73,7 @@ const AddTouristSpot = () => {
               </label>
               <label className="input-group">
                 <input
+                required
                   type="text"
                   name="photo"
                   placeholder="Photo URL"
@@ -89,6 +90,7 @@ const AddTouristSpot = () => {
               </label>
               <label className="input-group">
                 <input
+                required
                   type="text"
                   name="name"
                   placeholder="tourists_spot_name"
@@ -100,16 +102,22 @@ const AddTouristSpot = () => {
               <label className="label">
                 <span className="label-text">Country_Name</span>
               </label>
-              <label className="input-group">
-                <input
-                  type="text"
-                  name="country"
-                  placeholder="country_Name"
-                  className="input input-bordered w-full"
-                />
-              </label>
-            </div>
+              <select
+              name="country"
+               className="select text-gray-400">
+                
+                <option disabled selected>
+                  Select Country
+                </option>
+                <option>Bangladesh</option>
+                <option>Thailand</option>
+                <option>Indonesia</option>
+                <option>Malaysia</option>
+                <option>Vietnam</option>
+              </select>
           </div>
+          </div>
+
           {/* form description and price row */}
           <div className="md:flex mb-8">
             <div className="form-control md:w-1/2">
@@ -118,6 +126,7 @@ const AddTouristSpot = () => {
               </label>
               <label className="input-group">
                 <input
+                required
                   type="text"
                   name="location"
                   placeholder="location"
@@ -131,6 +140,7 @@ const AddTouristSpot = () => {
               </label>
               <label className="input-group">
                 <input
+                required
                   type="text"
                   name="description"
                   placeholder="short description"
@@ -147,6 +157,7 @@ const AddTouristSpot = () => {
               </label>
               <label className="input-group">
                 <input
+                required
                   type="text"
                   name="cost"
                   placeholder=" average_cost"
@@ -160,6 +171,7 @@ const AddTouristSpot = () => {
               </label>
               <label className="input-group">
                 <input
+                required
                   type="text"
                   name="seasonality"
                   placeholder="seasonality"
@@ -176,6 +188,7 @@ const AddTouristSpot = () => {
               </label>
               <label className="input-group">
                 <input
+                required
                   type="text"
                   name="travel"
                   placeholder="travel_time"
@@ -189,6 +202,7 @@ const AddTouristSpot = () => {
               </label>
               <label className="input-group">
                 <input
+                required
                   type="text"
                   name="totalVisitorsPerYear"
                   placeholder="totalVisitorsPerYear"
@@ -205,6 +219,7 @@ const AddTouristSpot = () => {
               </label>
               <label className="input-group">
                 <input
+                required
                   type="text"
                   name="userName"
                   placeholder="User Name"
