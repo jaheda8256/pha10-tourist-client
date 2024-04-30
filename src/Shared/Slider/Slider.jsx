@@ -1,7 +1,13 @@
 
+
 const Slider = () => {
+
+ 
+
     return (
-      <div className="lg:my-20 my-10">
+      <div className="lg:my-16 my-10">
+
+
         <div className="carousel w-full">
     <div id="item1" className="carousel-item w-full relative">
       <img src="https://i.ibb.co/1RJLsPJ/hammock-with-beautiful-nature-tropical-beach.jpg" className="w-full h-[540px] rounded-3xl" />

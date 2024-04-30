@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import Navbar from "../../Shared/Navbar/Navbar";
 
 
@@ -9,8 +9,7 @@ const Details = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <h1 className="text-5xl font-pop font-bold text-center mt-8">Details</h1>
-      <div className="card lg:card-side bg-base-100 shadow-xl mt-6 grid lg:grid-cols-2 rounded-xl">
+      <div className="card lg:card-side bg-base-100 shadow-xl grid lg:grid-cols-2 rounded-xl my-16">
         <div className="rounded-xl">
         <figure>
           <img
@@ -24,7 +23,9 @@ const Details = () => {
           <h2 className="card-title font-pop text-3xl">{cards.name}</h2>
           <p>Click the button to listen on Spotiwhy app.</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Listen</button>
+           <Link to='/'>
+           <button className="btn bg-[#c0cece] font-extrabold text-[#195e5e]">Back To Home</button>
+           </Link>
           </div>
         </div>
       </div>

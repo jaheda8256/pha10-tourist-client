@@ -1,15 +1,11 @@
-import Navbar from "../../Shared/Navbar/Navbar";
-
-
 
 const About = () => {
   return (
     <div>
     
-      <Navbar></Navbar>
 
       <h2 className="text-center text-purple-600 text-5xl font-bold mt-16 mb-4 ">
-        Special <span className=" text-teal-600">Resort</span>
+        Excellent <span className=" text-teal-600">Tour</span>
       </h2>
       <p className="text-center mt-3">
         Our resort offers a luxurious and relaxing experience nestled in the
@@ -24,7 +20,7 @@ const About = () => {
         style={{ width: "100%", maxHeight: "300px", objectFit: "cover" }}
       />
       <div>
-        <h3 className="text-center text-4xl font-bold">Accommodations</h3>
+        <h3 className="text-center text-4xl font-bold">Expression</h3>
         <p className="text-center mt-4 mb-20">
           Choose from a range of accommodations including cozy cabins, spacious{" "}
           <br /> suites,and luxurious villas. Each room is designed to provide

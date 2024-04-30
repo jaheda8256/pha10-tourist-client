@@ -44,9 +44,6 @@ const Navbar = () => {
       <li className="font-semibold">
         <NavLink to="/register">Register</NavLink>
       </li>
-      <li className="font-semibold">
-        <NavLink to="/update">Update</NavLink>
-      </li>
     </>
   );
   return (
@@ -76,15 +73,15 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <a className="font-pop font-semibold lg:text-2xl  sm:flex items-center justify-center  bg-gradient-to-r from-cyan-400 to-violet-700  text-transparent bg-clip-text">
+        <a className="font-pop font-bold lg:text-2xl  sm:flex items-center justify-center bg-gradient-to-r from-cyan-400 to-violet-700  text-transparent bg-clip-text">
           <span>
             <img
-              src="palette.png"
+              src="https://i.ibb.co/nMYVFVg/travel.png"
               alt=""
-              className="w-10 h-10 hidden sm:block "
+              className="w-10 h-10 hidden sm:block mr-2"
             />
           </span>
-          Tourists
+         Tourists
         </a>
       </div>
       <div className="navbar-center  hidden sm:block md:flex lg:flex">

@@ -1,11 +1,9 @@
 import { useLoaderData } from "react-router-dom";
 import Navbar from "../../Shared/Navbar/Navbar";
-import useAuth from "../../hooks/useAuth";
 import Swal from "sweetalert2";
 
 const Update = () => {
   const tourist = useLoaderData();
-//   const { user } = useAuth() || {};
 
   const {
     _id,
@@ -26,14 +24,12 @@ const Update = () => {
     const form = event.target;
     const photo = form.photo.value;
     const name = form.name.value;
-    // const email = user.email;
     const country = form.country.value;
     const  location = form.location.value;
     const description = form.description.value;
     const cost = form.cost.value;
     const seasonality = form.seasonality.value;
     const  travel = form.travel.value;
-    // const  userName = form.userName.value;
     const  totalVisitorsPerYear = form.totalVisitorsPerYear.value;
 
     const updatedTourists= {
@@ -44,9 +40,7 @@ const Update = () => {
       cost,
       seasonality,
       travel,
-    //   userName,
       totalVisitorsPerYear,
-    //   email,
       photo,
     };
     console.log(updatedTourists);
@@ -76,9 +70,9 @@ const Update = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="bg-[#6aacac] p-24 my-16 mx-2 rounded-md">
+      <div className="bg-[#6aacac] text-[#195e5e] p-16 my-16 mx-2 rounded-md">
         <h2 className="text-3xl font-pop text-center font-extrabold">
-          Update Tourists Spot :{name}
+          Update Tourists Spot
         </h2>
         <form onSubmit={handleUpdate}>
           {/* photo url */}

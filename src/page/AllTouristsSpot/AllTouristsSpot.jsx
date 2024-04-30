@@ -8,29 +8,31 @@ import { useState } from "react";
 const AllTouristsSpot = () => {
   const loadedTourists = useLoaderData();
   const [spots, setSpots] = useState(loadedTourists)
+  console.log(spots);
 
   const handleSortSpots = e => {
+    
     const sortBy = e.target.value
-
+    console.log('sorting', sortBy)
     const newSortedSpots = [...spots].sort((spotA, spotB) => {
       // ascending
       if (sortBy === 'cost-asc') {
-        return spotA.averageCost - spotB.averageCost
+        return spotA.cost - spotB.cost
       }
       // descending
       else {
-        return spotB.averageCost - spotA.averageCost
+        return spotB.cost - spotA.cost
       }
     })
 
-    setSpots(newSortedSpots)
+    setSpots([...newSortedSpots])
   }
 
   return (
     <div>
       <Navbar />
-      <h1 className="text-3xl my-10 text-center font-bold bg-[#6fafaf] text-[#195e5e] p-3">
-        All Tourists Spot: {loadedTourists.length}
+      <h1 className="text-3xl my-10 text-center font-bold bg-[#c0cece] text-[#195e5e] p-3 rounded-xl">
+        All Tourists Spot
       </h1>
 
 
@@ -44,9 +46,10 @@ const AllTouristsSpot = () => {
           </select>
         </div>
 
+{/* card */}
       <div className="grid md:grid-cols-2 gap-4 mb-16">
          {
-                loadedTourists.map(tourist => <AllCard
+                spots.map(tourist => <AllCard
                 key={tourist._id}
                 tourist={tourist}
                 >

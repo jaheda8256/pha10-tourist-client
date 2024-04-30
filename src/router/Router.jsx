@@ -1,7 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-
-
-
 import Home from "../page/Home/Home";
 import Login from "../page/Login/Login";
 import Register from "../page/Register/Register";
@@ -44,7 +41,9 @@ const router = createBrowserRouter([
 
         {
             path: '/details/:id',
-            element: <Details></Details>,  
+            element: <PrivateRoute>
+              <Details></Details>
+            </PrivateRoute>,  
             loader: ({params}) => fetch(`http://localhost:5000/tourists/${params.id}`)
         },
         {

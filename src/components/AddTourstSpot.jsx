@@ -1,12 +1,17 @@
 import Navbar from "../Shared/Navbar/Navbar";
 import Swal from 'sweetalert2'
 import useAuth from "../hooks/useAuth";
+import { Typewriter } from 'react-simple-typewriter';
 
 const AddTouristSpot = () => {
 
 
   const { user } = useAuth() || {};
 
+  
+  // const handleDone = () => {
+  //   // console.log(Done after 5 loops!)
+  // }
 
   const handleAddCoffee = (event) => {
     event.preventDefault();
@@ -62,8 +67,20 @@ const AddTouristSpot = () => {
   return (
    <div>
     <Navbar></Navbar>
-     <div className="bg-[#6aacac] p-24 my-16 mx-2 rounded-md">
-        <h2 className="text-3xl font-pop text-center font-extrabold">Add Tourists Spot</h2>
+     <div className="bg-[#6aacac] text-[#195e5e] p-16 my-16 mx-2 rounded-md">
+        <h2 className="text-3xl font-pop text-center font-extrabold"> <span style={{ color: '', fontWeight: 'bold' }}>
+          <Typewriter
+            words={['Add Tourists spot']}
+            loop={1000000}
+            cursor
+            cursorStyle='_'
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+            // onLoopDone={handleDone}
+          />
+        </span></h2>
+
         <form onSubmit={handleAddCoffee}>
             {/* photo url */}
         <div className="mb-8">

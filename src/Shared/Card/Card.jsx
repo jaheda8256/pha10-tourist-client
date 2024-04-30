@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types'; 
 import { Link } from 'react-router-dom';
 
-const Card = ({tourist, setTourists, tourists}) => {
+const Card = ({tourist}) => {
     const { 
         _id,
         name,     
@@ -25,7 +25,7 @@ const Card = ({tourist, setTourists, tourists}) => {
 <p>seasonality: {seasonality}</p>
 <div className="">
 <Link to={`/details/${_id}`}>
-           <button className="btn w-full bg-blue-800 text-white">View Details</button>
+           <button className="btn w-full bg-[#c0cece] font-extrabold text-[#195e5e]">View Details</button>
   </Link>
 </div>
 </div>
