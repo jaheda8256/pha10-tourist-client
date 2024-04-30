@@ -4,13 +4,13 @@ import Navbar from "../../Shared/Navbar/Navbar";
 import Slider from "../../Shared/Slider/Slider";
 import Card from "../../Shared/Card/Card";
 import Country from "../../components/Country";
+import { useState } from "react";
 
 
 const Home = () => {
 
     const tourists = useLoaderData();
-
-
+   
 
     return (
         <div>

@@ -44,6 +44,9 @@ const Navbar = () => {
       <li className="font-semibold">
         <NavLink to="/register">Register</NavLink>
       </li>
+      <li className="font-semibold">
+        <NavLink to="/update">Update</NavLink>
+      </li>
     </>
   );
   return (

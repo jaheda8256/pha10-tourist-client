@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types'; 
 import { Link } from 'react-router-dom';
 
-const Card = ({tourist}) => {
+const Card = ({tourist, setTourists, tourists}) => {
     const { 
         _id,
         name,     
