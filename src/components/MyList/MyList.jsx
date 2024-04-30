@@ -59,7 +59,7 @@ function MyList() {
   return (
     <div>
       <Navbar></Navbar>
-      <h1 className="text-4xl bg-[#c0cece] text-[#195e5e] p-4 font-pop font-bold text-center mt-8">My List</h1>
+      <h1 className="text-4xl bg-[#c0cece] text-[#195e5e] lg:p-4 font-pop font-bold text-center mt-8">My List</h1>
       <div className="overflow-x-auto mb-20 h-[200px] shadow-2xl bg-[#6fafaf] text-[#195e5e]">
   <table className="table">
     {/* head */}
