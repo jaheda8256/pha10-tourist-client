@@ -21,7 +21,14 @@ const Details = () => {
         </div>
         <div className="card-body">
           <h2 className="card-title font-pop text-3xl">{cards.name}</h2>
-          <p>Click the button to listen on Spotiwhy app.</p>
+          <p>Country: {cards.country}</p>
+          <p>Location: {cards.location}</p>
+          <p>Description: {cards.description}</p>
+          <p>Cost: {cards.cost}</p>
+          <p>Travel-time: {cards.travel}</p>
+          <p>TotalVisitorsPerYear: {cards.totalVisitorsPerYear}</p>
+          <p>UserName: {cards.userName}</p>
+          <p>Email: {cards.email}</p>
           <div className="card-actions justify-end">
            <Link to='/'>
            <button className="btn bg-[#c0cece] font-extrabold text-[#195e5e]">Back To Home</button>
