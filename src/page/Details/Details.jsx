@@ -9,13 +9,14 @@ const Details = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="card lg:card-side bg-base-100 shadow-xl grid lg:grid-cols-2 rounded-xl my-16">
-        <div className="rounded-xl">
+     
+       <div className="lg:flex rounded-xl my-16 ">
+       <div className="rounded-xl">
         <figure>
           <img
             src={cards.photo}
             alt="Album"
-            className="rounded-xl"
+            className="rounded-xl w-full"
           />
         </figure>
         </div>
@@ -29,14 +30,15 @@ const Details = () => {
           <p>TotalVisitorsPerYear: {cards.totalVisitorsPerYear}</p>
           <p>UserName: {cards.userName}</p>
           <p>Email: {cards.email}</p>
-          <div className="card-actions justify-end">
+          <div className="card-actions">
            <Link to='/'>
            <button className="btn bg-[#c0cece] font-extrabold text-[#195e5e]">Back To Home</button>
            </Link>
           </div>
         </div>
+       </div>
       </div>
-    </div>
+  
   );
 };
 
