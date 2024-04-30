@@ -27,7 +27,7 @@ const Home = () => {
     
         <p className="text-center">Nice, capital of the Alpes-Maritimes department on the French Riviera, sits on the pebbly <br /> shores of the Baie des Anges. Founded by the Greeks and later a retreat for 19th-century European elite, the city has also long attracted artists</p>
      </div>
-         <div className="grid md:grid-cols-2 gap-4 mb-16">
+         <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 gap-6 mb-16">
          {
                 tourists.slice(0,6).map(tourist => <Card
                 key={tourist._id}
@@ -38,7 +38,6 @@ const Home = () => {
             } 
          </div>
          <About></About>
-         <Country></Country>
            
         </div>
     );
