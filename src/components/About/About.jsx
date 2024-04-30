@@ -8,10 +8,7 @@ const About = () => {
         Excellent <span className=" text-teal-600">Tour</span>
       </h2>
       <p className="text-center mt-3">
-        Our resort offers a luxurious and relaxing experience nestled in the
-        heart of nature.With stunning views, top-notch <br />
-        amenities, and a variety of activities, your stay with us will be
-        unforgettable.
+      I really enjoyed going on tour. Learned a lot. Different people in different places. <br /> The world is very beautiful, I don't understand it without visiting it. It is possible to know a lot and gain a lot of knowledge
       </p>
       <img
         className="my-20 rounded-3xl"
@@ -22,9 +19,7 @@ const About = () => {
       <div>
         <h3 className="text-center text-4xl font-bold">Expression</h3>
         <p className="text-center mt-4 mb-20">
-          Choose from a range of accommodations including cozy cabins, spacious{" "}
-          <br /> suites,and luxurious villas. Each room is designed to provide
-          comfort and tranquility during your stay.
+        I really enjoyed going on tour. Learned a lot. Different people in different places. <br /> The world is very beautiful, I don't understand it without visiting it. It is possible to know a lot and gain a lot of knowledge
         </p>
         <img
           className="my-20 rounded-3xl"

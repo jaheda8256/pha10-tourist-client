@@ -46,7 +46,7 @@ const Update = () => {
     console.log(updatedTourists);
 
   //   // send data to the server
-    fetch(`http://localhost:5000/tourists/${_id}`, {
+    fetch(`https://tourist-server-sandy.vercel.app/tourists/${_id}`, {
         method: 'PuT',
         headers: {
             'content-type':'application/json'

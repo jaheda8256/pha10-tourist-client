@@ -12,7 +12,7 @@ function MyList() {
 
   // get my spots
   useEffect(() => {
-    fetch(`http://localhost:5000/tourists-email/${user.email}`)
+    fetch(`https://tourist-server-sandy.vercel.app/tourists-email/${user.email}`)
       .then((res) => res.json())
       .then((data) => setSpots(data))
       .catch((err) => console.log(err.message));
@@ -36,7 +36,7 @@ function MyList() {
       if (result.isConfirmed) {
         //
 
-        fetch(`http://localhost:5000/tourists/${_id}`, {
+        fetch(`https://tourist-server-sandy.vercel.app/tourists/${_id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

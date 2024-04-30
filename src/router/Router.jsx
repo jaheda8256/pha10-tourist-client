@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         {
             path: '/',
             element: <Home></Home>,
-            loader: () => fetch('http://localhost:5000/tourists')
+            loader: () => fetch('https://tourist-server-sandy.vercel.app/tourists')
         }, 
         {
           path: '/login',
@@ -44,7 +44,7 @@ const router = createBrowserRouter([
             element: <PrivateRoute>
               <Details></Details>
             </PrivateRoute>,  
-            loader: ({params}) => fetch(`http://localhost:5000/tourists/${params.id}`)
+            loader: ({params}) => fetch(`https://tourist-server-sandy.vercel.app/tourists/${params.id}`)
         },
         {
             path: '/addTourists',
@@ -55,7 +55,7 @@ const router = createBrowserRouter([
         {
             path: '/allTourists',
             element: <AllTouristsSpot></AllTouristsSpot>,
-            loader: () => fetch('http://localhost:5000/tourists')
+            loader: () => fetch('https://tourist-server-sandy.vercel.app/tourists')
         },
 
         {
@@ -63,14 +63,14 @@ const router = createBrowserRouter([
             element:<PrivateRoute>
               <MyList></MyList>
             </PrivateRoute>,
-            loader: () => fetch('http://localhost:5000/tourists')
+            loader: () => fetch('https://tourist-server-sandy.vercel.app/tourists')
         },
         {
           path: '/update/:id',
           element:<PrivateRoute>
              <Update></Update>
           </PrivateRoute>,
-           loader: ({params}) => fetch(`http://localhost:5000/tourists/${params.id}`)
+           loader: ({params}) => fetch(`https://tourist-server-sandy.vercel.app/tourists/${params.id}`)
         }
         
       ]

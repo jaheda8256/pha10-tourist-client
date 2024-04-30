@@ -8,9 +8,9 @@ const Footer = () => {
   <aside>
     {/* <img src={logo} alt="" /> */}
     <p className="font-bold text-[#134d4d]">
-      ACME Industries Ltd. <br/>Providing reliable tech since 1992
+      Tourists.<br/>Providing reliable tech since 1992
     </p> 
-    <p className="text-[#134d4d]">FIVE Jumeirah Village © 2024 - All right reserved</p>
+    <p className="text-[#134d4d]">Tourist spot © 2024 - All right reserved</p>
   </aside> 
  
 </footer>

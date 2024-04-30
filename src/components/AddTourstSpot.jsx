@@ -44,7 +44,7 @@ const AddTouristSpot = () => {
     console.log(addTourists);
 
   //   // send data to the server
-    fetch('http://localhost:5000/tourists', {
+    fetch('https://tourist-server-sandy.vercel.app/tourists', {
         method: 'POST',
         headers: {
             'content-type':'application/json'
