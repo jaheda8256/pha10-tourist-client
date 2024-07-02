@@ -11,6 +11,9 @@
 ## About:
 Programming hero: B9A10, assignment 10. Focused on nodejs with mongodb. Used react 18, nodejs, mongodb, firebase auth. 
 
+## Project Description: Explore Southeast Asia
+- Explore Southeast Asia is a tourism management website focusing on the diverse and vibrant tourist destinations within Southeast Asia. This project highlights some of the most captivating locations across six countries in the region: Bangladesh, Thailand, Indonesia, Malaysia, Vietnam, and Cambodia.
+
 ## Features:
   - Authenticate (login, register) using firebase
   - Login using Email, github, google 
