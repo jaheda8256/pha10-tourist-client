@@ -3,7 +3,6 @@ import { useLoaderData } from "react-router-dom";
 import Navbar from "../../Shared/Navbar/Navbar";
 import Slider from "../../Shared/Slider/Slider";
 import Card from "../../Shared/Card/Card";
-import Country from "../../components/Country";
 import { Fade } from "react-awesome-reveal";
 import About from "../../components/About/About";
 

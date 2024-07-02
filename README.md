@@ -1,12 +1,30 @@
 
 # Tourists-Client
 
-live link= https://tourist-website-e895b.web.app/
+- live link= https://tourist-website-e895b.web.app
+- github-client = https://github.com/jahedasultana/pha11-food-donator-client
+- github-server = https://github.com/jahedasultana/pha10-tourist-server
+
 ## Category: Travel & Tourism
 
-### Features:
-- *Comprehensive Destination Guides:* Explore detailed guides for popular destinations in Southeast Asia, including must-visit attractions, local cuisines, accommodation options, and insider tips.
-- *Travel Itineraries:* Discover suggested itineraries for various durations, whether you're planning a short weekend getaway or a long backpacking trip across the region.
-- *Insider Recommendations:* Benefit from insider recommendations on off-the-beaten-path experiences, hidden gems, and lesser-known attractions to enhance your travel experience.
-- *Travel Tips & Advice:* Access practical travel tips and advice on topics such as transportation, visa requirements, safety precautions, cultural etiquette, and budgeting tips to ensure a smooth and enjoyable trip.
-- *Interactive Maps:* Navigate Southeast Asia with ease using interactive maps featuring key points of interest, transportation hubs, dining options, and accommodations, allowing you to plan your itinerary efficiently.
+
+## About:
+Programming hero: B9A10, assignment 10. Focused on nodejs with mongodb. Used react 18, nodejs, mongodb, firebase auth. 
+
+## Features:
+  - Authenticate (login, register) using firebase
+  - Login using Email, github, google 
+  - Some routes (pages) are protected. only logged in user can access these.
+  - Fully custom backend server used using express js.
+  - CRUD operation done using expressjs, mongodb atlas
+  - Light Dark mode theme applied
+  - A
+
+ ##  Cloning and Local Setup
+- To run this project locally, follow these steps:
+
+- Clone this repository.
+- Install dependencies.(npm install)
+- Set up MongoDB and Firebase credentials in environment variables.
+- Clone the server repository(https://github.com/jahedasultana/pha10-tourist-server.git)
+- Install server dependencies and start the server.
